@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 95%;
+            margin: 10px;
+        }
+
+
+        #submit {
+            width: 90%;
+        }
+
+        .answerText {
+            margin-left: 100px;
+            width: 85%
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="" method="get" onsubmit="return addQuestion(event)">
+        <h4>All questions:</h4>
+        <div id="questionList">
+
+        </div>
+        <hr>
+        <h4>Add new question:</h4>
+        <div class="container">
+            Question:
+            <input type="text" class="answerText" id="questionInput" name="question"><br>
+        </div>
+        <div class="container">
+            Correct answer:
+            <input type="text" class="answerText" id="corAnswerInput" name="corAnswer"><br>
+        </div>
+        <div class="container">
+            Wrong answer:
+            <input type="text" class="answerText" id="wrAnswerInput" name="wrAnswer"><br>
+        </div>
+        <input type="submit" id="submit" value="Add">
+    </form>
+    <script src="Task5.js"></script>
+</body>
+
+</html>

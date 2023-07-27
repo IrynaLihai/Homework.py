@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .col {
+            width: 33.3%;
+            float: left;
+        }
+
+        .container {
+            border-style: solid;
+            border-width: 1px;
+            height: 30px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        .colorbox {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        .text {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .color {
+            border-style: none;
+        }
+
+        .input {
+            margin: 5px 25% 5px 25%;
+            width: 50%;
+            display: block;
+        }
+
+        .cont {
+            display: inline-block;
+
+        }
+
+        .letter {
+            display: inline-block;
+        }
+
+        .numbers {
+            display: inline-block;
+        }
+
+        #submit {
+            margin-left: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <form>
+        <div class="input">
+            <div class="cont">
+                <div class="letter">R</div>
+                <input type="number" name="textR" class="numbers">
+            </div>
+            <div class="cont">
+                <div class="letter">G</div>
+                <input type="number" name="textG" class="numbers">
+            </div>
+            <div class="cont">
+                <div class="letter">B</div>
+                <input type="number" name="textB" class="numbers">
+            </div>
+            <p><input type="submit" id="submit" name="submit" value="Submit"></p>
+        </div>
+        <div class="row">
+            <div class="col" id="col1">
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(165, 44, 42)"></div>
+                    <div class="text">RGB: 165, 44, 42</div>
+                </div>
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(100, 149, 237)"></div>
+                    <div class="text">RGB: 100, 149, 237</div>
+                </div>
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(189, 183, 107)"></div>
+                    <div class="text">RGB: 189, 183, 107</div>
+                </div>
+            </div>
+            <div class="col" id="col1">
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(165, 200, 15)"></div>
+                    <div class="text">RGB: 165, 200, 15</div>
+                </div>
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(138, 43, 226)"></div>
+                    <div class="text">RGB: 138, 43, 226</div>
+                </div>
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(255, 105, 180)"></div>
+                    <div class="text">RGB: 255, 105, 180</div>
+                </div>
+            </div>
+            <div class="col" id="col1">
+
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(0, 139, 139)"></div>
+                    <div class="text">RGB: 0, 139, 139</div>
+                </div>
+                <div class="container">
+                    <div class="colorbox" style="background-color: rgb(0, 206, 209)"></div>
+                    <div class="text">RGB: 0, 206, 209</div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="Task4.js"></script>
+</body>
+
+</html>
